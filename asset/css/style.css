@@ -162,7 +162,7 @@ section.header {
   background-color: #5e5150;
 }
 section.header h1 {
-  font-size: 91px;
+  font-size: 76px;
   line-height: 67px;
   color: #d3ae63;
   font-family: "Flat Earth Scribe";
@@ -202,13 +202,13 @@ section.header .header-content {
 section.header img {
   width: 100%;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media (max-width: 576px) {
   section.header img {
-    -o-object-position: -450px;
-       object-position: -450px;
+    -o-object-position: -550px;
+       object-position: -550px;
+    -o-object-fit: none;
+       object-fit: none;
   }
 }
 
@@ -230,7 +230,7 @@ section.event {
   }
 }
 section.event h6 {
-  font-size: 21px;
+  font-size: 18px;
   margin-bottom: 0rem;
   text-transform: uppercase;
   color: #5e5150;
@@ -238,7 +238,7 @@ section.event h6 {
   font-family: "Avenir";
 }
 section.event p {
-  font-size: 21px;
+  font-size: 16px;
   color: #5e5150;
   font-family: "Avenir";
   margin-bottom: 0rem;
@@ -251,8 +251,8 @@ section.event p {
 section.event img {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 74px;
-  width: 74px;
+  height: 60px;
+  width: 60px;
   margin-right: 20px;
 }
 
@@ -261,7 +261,7 @@ section.about {
   width: 100%;
   height: 100vh;
 }
-@media (max-width: 767.9px) {
+@media (max-width: 991.9px) {
   section.about {
     height: 100%;
   }
@@ -270,7 +270,7 @@ section.about .about-img-2 {
   height: 100vh;
   width: 100%;
 }
-@media (max-width: 767.9px) {
+@media (max-width: 991.9px) {
   section.about .about-img-2 {
     height: 100%;
   }
@@ -278,26 +278,26 @@ section.about .about-img-2 {
 section.about .about-img-1 {
   height: 100vh;
 }
-@media (max-width: 767.9px) {
+@media (max-width: 991.9px) {
   section.about .about-img-1 {
     height: 100%;
   }
 }
 section.about h2 {
-  font-size: 90px;
+  font-size: 100px;
   line-height: 75px;
   color: #ffffff;
   font-family: "Flat Earth Scribe";
   margin-bottom: 0rem;
 }
-@media (max-width: 1999.9px) {
+@media (max-width: 1199.9px) {
   section.about h2 {
     font-size: 75px;
   }
 }
 @media (max-width: 991.9px) {
   section.about h2 {
-    font-size: 50px;
+    font-size: 85px;
   }
 }
 @media (max-width: 767.9px) {
@@ -313,8 +313,8 @@ section.about h2 {
   }
 }
 section.about .about-con1 {
-  padding-right: 70px;
-  top: 90px;
+  padding-right: 100px;
+  top: 110px;
   right: 0px;
 }
 section.about .about-con1 .btn {
@@ -324,7 +324,7 @@ section.about .about-con1 .btn {
 }
 section.about .about-con1 .btn a {
   background-color: none;
-  font-size: 31px;
+  font-size: 24px;
   line-height: 99px;
   text-decoration: none;
   text-transform: uppercase;
@@ -333,10 +333,39 @@ section.about .about-con1 .btn a {
   font-family: "Avenir";
 }
 section.about .about-con2 {
-  bottom: 20px;
+  bottom: 8px;
   left: 0px;
   right: 0px;
   margin: auto;
+}
+section.about .about-con2 h2 {
+  font-size: 85px;
+  line-height: 75px;
+  color: #ffffff;
+  font-family: "Flat Earth Scribe";
+  margin-bottom: 0rem;
+}
+@media (max-width: 1199.9px) {
+  section.about .about-con2 h2 {
+    font-size: 75px;
+  }
+}
+@media (max-width: 991.9px) {
+  section.about .about-con2 h2 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 767.9px) {
+  section.about .about-con2 h2 {
+    font-size: 80px;
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 575.9px) {
+  section.about .about-con2 h2 {
+    padding: 0px 15px;
+    font-size: 60px;
+  }
 }
 section.about .about-con2 .btn {
   background: none;
@@ -345,7 +374,7 @@ section.about .about-con2 .btn {
 }
 section.about .about-con2 .btn a {
   background-color: none;
-  font-size: 31px;
+  font-size: 20px;
   line-height: 99px;
   text-decoration: none;
   text-transform: uppercase;
@@ -378,8 +407,8 @@ section.explore .gridtype-img {
   }
 }
 section.explore .footer-logo {
-  height: 316px;
-  width: 534px;
+  height: 320px;
+  width: 485px;
   padding-bottom: px;
   padding-top: 50px;
 }
@@ -473,7 +502,7 @@ section.explore .explore-body .explore-left .explore-text {
   width: 100%;
 }
 section.explore .explore-body .explore-left .bird-img {
-  height: 432px;
+  height: 400px;
   width: 100%;
 }
 @media (max-width: 991.9px) {
@@ -492,7 +521,7 @@ section.explore .explore-body .explore-left .childern-img {
   }
 }
 section.explore .explore-body .explore-left .relax {
-  font-size: 120px;
+  font-size: 150px;
   color: #535e4b;
   font-family: "Flat Earth Scribe";
   text-align: center;
@@ -523,11 +552,17 @@ section.explore .explore-body .explore-right .boat-img {
 }
 section.explore .explore-body .explore-right .discover-text {
   padding-top: 50px;
-  font-size: 100px;
+  font-size: 120px;
+  margin-left: -35px;
   text-align: center;
   color: #535e4b;
   font-weight: bold;
   font-family: Antro_Vectra_Bolder;
+}
+@media (max-width: 992px) {
+  section.explore .explore-body .explore-right .discover-text {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 450px) {
   section.explore .explore-body .explore-right .discover-text {
@@ -551,7 +586,7 @@ section.explore .explore-body .explore-right .img4 {
   justify-content: center;
 }
 .footer p {
-  font-size: 17px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 800;

@@ -165,7 +165,7 @@ section.header {
   background-color: #5e5150;
 
   h1 {
-    font-size: 91px;
+    font-size: 76px;
     line-height: 67px;
     color: #d3ae63;
     font-family: "Flat Earth Scribe";
@@ -199,9 +199,9 @@ section.header {
   img {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
     @media (max-width: 576px) {
-      object-position: -450px;
+      object-position: -550px;
+      object-fit: none;
     }
   }
 }
@@ -222,7 +222,7 @@ section.event {
   }
 
   h6 {
-    font-size: 21px;
+    font-size: 18px;
     margin-bottom: 0rem;
     text-transform: uppercase;
     color: #5e5150;
@@ -230,7 +230,7 @@ section.event {
     font-family: "Avenir";
   }
   p {
-    font-size: 21px;
+    font-size: 16px;
     color: #5e5150;
     font-family: "Avenir";
     margin-bottom: 0rem;
@@ -240,8 +240,8 @@ section.event {
   }
   img {
     object-fit: contain;
-    height: 74px;
-    width: 74px;
+    height: 60px;
+    width: 60px;
     margin-right: 20px;
   }
 }
@@ -249,33 +249,33 @@ section.about {
   background-color: #d3ae63;
   width: 100%;
   height: 100vh;
-  @media (max-width: 767.9px) {
+  @media (max-width: 991.9px) {
     height: 100%;
   }
   .about-img-2 {
     height: 100vh;
     width: 100%;
-    @media (max-width: 767.9px) {
+    @media (max-width: 991.9px) {
       height: 100%;
     }
   }
   .about-img-1 {
     height: 100vh;
-    @media (max-width: 767.9px) {
+    @media (max-width: 991.9px) {
       height: 100%;
     }
   }
   h2 {
-    font-size: 90px;
+    font-size: 100px;
     line-height: 75px;
     color: #ffffff;
     font-family: "Flat Earth Scribe";
     margin-bottom: 0rem;
-    @media (max-width: 1999.9px) {
+    @media (max-width: 1199.9px) {
       font-size: 75px;
     }
     @media (max-width: 991.9px) {
-      font-size: 50px;
+      font-size: 85px;
     }
     @media (max-width: 767.9px) {
       font-size: 80px;
@@ -287,8 +287,8 @@ section.about {
     }
   }
   .about-con1 {
-    padding-right: 70px;
-    top: 90px;
+    padding-right: 100px;
+    top: 110px;
     right: 0px;
     .btn {
       background: none;
@@ -296,7 +296,7 @@ section.about {
       margin-top: -30px;
       a {
         background-color: none;
-        font-size: 31px;
+        font-size: 24px;
         line-height: 99px;
         text-decoration: none;
         text-transform: uppercase;
@@ -307,17 +307,38 @@ section.about {
     }
   }
   .about-con2 {
-    bottom: 20px;
+    bottom: 8px;
     left: 0px;
     right: 0px;
     margin: auto;
+    h2 {
+      font-size: 85px;
+      line-height: 75px;
+      color: #ffffff;
+      font-family: "Flat Earth Scribe";
+      margin-bottom: 0rem;
+      @media (max-width: 1199.9px) {
+        font-size: 75px;
+      }
+      @media (max-width: 991.9px) {
+        font-size: 80px;
+      }
+      @media (max-width: 767.9px) {
+        font-size: 80px;
+        padding: 0px 15px;
+      }
+      @media (max-width: 575.9px) {
+        padding: 0px 15px;
+        font-size: 60px;
+      }
+    }
     .btn {
       background: none;
       border: none;
       margin-top: -30px;
       a {
         background-color: none;
-        font-size: 31px;
+        font-size: 20px;
         line-height: 99px;
         text-decoration: none;
         text-transform: uppercase;
@@ -349,8 +370,8 @@ section.explore {
   }
 
   .footer-logo {
-    height: 316px;
-    width: 534px;
+    height: 320px;
+    width: 485px;
     padding-bottom: px;
     padding-top: 50px;
     @media (max-width: 1199.9px) {
@@ -423,7 +444,7 @@ section.explore {
         width: 100%;
       }
       .bird-img {
-        height: 432px;
+        height: 400px;
         width: 100%;
         @media (max-width: 991.9px) {
           height: 100%;
@@ -438,7 +459,7 @@ section.explore {
         }
       }
       .relax {
-        font-size: 120px;
+        font-size: 150px;
         color: #535e4b;
         font-family: "Flat Earth Scribe";
         text-align: center;
@@ -463,11 +484,15 @@ section.explore {
       }
       .discover-text {
         padding-top: 50px;
-        font-size: 100px;
+        font-size: 120px;
+        margin-left: -35px;
         text-align: center;
         color: #535e4b;
         font-weight: bold;
         font-family: Antro_Vectra_Bolder;
+        @media (max-width: 992px) {
+          margin-left: 0px;
+        }
         @media (max-width: 450px) {
           font-size: 70px;
         }
@@ -488,7 +513,7 @@ section.explore {
   align-items: center;
   justify-content: center;
   p {
-    font-size: 17px;
+    font-size: 12px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 800;
