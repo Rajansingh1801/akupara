@@ -1,5 +1,5 @@
 new WOW().init();
-document.documentElement.style.setProperty("--animate-duration", "1.5s");
+document.documentElement.style.setProperty("--animate-duration", "2s");
 
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       document.getElementById("navbar_top").classList.remove("fixed-top");
       document.body.style.paddingTop = "";
-      $(".navbar").css("padding", "40px 0px");
+      $(".navbar").css("padding", "20px 0px");
     }
   });
 });
@@ -19,3 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 setTimeout(function () {
   $(".loaders").css("display", "none");
 }, 2500);
+
+$(".nav-items").click(function () {
+  //console.log("Clicked");
+  $(".nav-items .active").removeClass("active");
+  $(this).addClass("active");
+});

@@ -30,12 +30,12 @@ body {
   overflow-x: hidden;
 }
 .navbar {
-  padding: 40px 0px;
+  padding: 20px 0px;
   .logo-home-img {
     padding: 0px 48px;
   }
   @media (max-width: 1399px) {
-    padding: 30px 0px;
+    padding: 20px 0px;
     .logo-home-img {
       padding: 0px 0px;
     }
@@ -89,6 +89,23 @@ nav {
           font-size: 14x;
         }
       }
+      .active {
+        color: rgb(33, 196, 144) !important;
+        position: relative;
+      }
+      // .active::after {
+      //   content: "";
+      //   position: absolute;
+      //   bottom: -5px;
+      //   width: 20%;
+      //   background-color: #a2d6c6;
+      //   height: 3px;
+      //   display: flex;
+      // }
+      // .active:hover::after {
+      //   width: 60%;
+      //   transition: 500ms ease-in;
+      // }
       .nav-link:hover {
         color: rgb(33, 196, 144);
         width: fit-content;
@@ -116,7 +133,7 @@ nav {
     border: 1px solid white;
     border-radius: 50%;
     padding: 4px 5px;
-    color: #b0c181;
+    color: rgb(33, 196, 144);
     font-size: 23px;
   }
   .navbar-light .navbar-toggler {
@@ -320,9 +337,9 @@ section.explore {
 
   .gridtype-img {
     width: 100%;
-    height: 2700px;
+    height: 2550px;
     @media (max-width: 1399px) {
-      height: 2600px;
+      height: 2500px;
     }
     @media (max-width: 991.9px) {
       height: 100%;
@@ -414,7 +431,7 @@ section.explore {
       }
       .childern-img {
         margin-top: 20px;
-        height: 864px;
+        height: 780px;
         width: 100%;
         @media (max-width: 991.9px) {
           height: 100%;
@@ -465,13 +482,13 @@ section.explore {
   }
 }
 .footer {
-  height: 121px;
+  height: 100px;
   background-color: #146447;
   display: flex;
   align-items: center;
   justify-content: center;
   p {
-    font-size: 19px;
+    font-size: 17px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 800;
