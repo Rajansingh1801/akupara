@@ -36,6 +36,9 @@ body {
 .navbar {
   padding: 20px 0px;
 }
+.navbar #navbar_top {
+  transition: 1000ms ease-in-out;
+}
 .navbar .logo-home-img {
   padding: 0px 48px;
 }
@@ -158,57 +161,70 @@ nav .navbar-toggler:hover {
 
 section.header {
   width: 100%;
-  height: 100vh;
-  background-color: #5e5150;
+  background-color: #ffc746;
 }
-section.header h1 {
-  font-size: 76px;
-  line-height: 67px;
-  color: #d3ae63;
+section.header .myvideo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+section.header .head-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.header .head-content img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  section.header .head-content img {
+    width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  section.header .head-content img {
+    width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  section.header .head-content img {
+    width: 400px;
+  }
+}
+section.header video {
+  width: 100%;
+  filter: brightness(0.5);
+}
+@media (max-width: 576px) {
+  section.header video {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+section.header h2 {
+  font-size: 40px;
+  color: #ffffff;
   font-family: "Flat Earth Scribe";
   text-align: center;
 }
 @media (max-width: 991.9px) {
-  section.header h1 {
-    font-size: 65px;
-    line-height: 45px;
+  section.header h2 {
+    font-size: 30px;
   }
 }
 @media (max-width: 767.9px) {
-  section.header h1 {
-    font-size: 50px;
-    line-height: 50px;
+  section.header h2 {
+    font-size: 25px;
   }
 }
-section.header p {
-  font-size: 21px;
-  line-height: 29px;
-  color: #ffffff;
-  font-weight: 500;
-  font-family: "Avenir";
-  text-align: center;
-}
-@media (max-width: 767.9px) {
-  section.header p {
-    font-size: 18px;
-  }
-}
-section.header .header-content {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section.header img {
-  width: 100%;
-  height: 100vh;
-}
-@media (max-width: 576px) {
-  section.header img {
-    -o-object-position: -550px;
-       object-position: -550px;
-    -o-object-fit: none;
-       object-fit: none;
+@media (max-width: 576.9px) {
+  section.header h2 {
+    font-size: 25px;
   }
 }
 
@@ -526,6 +542,11 @@ section.explore .explore-body .explore-left .relax {
   font-family: "Flat Earth Scribe";
   text-align: center;
 }
+@media (max-width: 768px) {
+  section.explore .explore-body .explore-left .relax {
+    font-size: 120px;
+  }
+}
 @media (max-width: 450px) {
   section.explore .explore-body .explore-left .relax {
     font-size: 60px;
@@ -562,6 +583,11 @@ section.explore .explore-body .explore-right .discover-text {
 @media (max-width: 992px) {
   section.explore .explore-body .explore-right .discover-text {
     margin-left: 0px;
+  }
+}
+@media (max-width: 576px) {
+  section.explore .explore-body .explore-right .discover-text {
+    font-size: 100px;
   }
 }
 @media (max-width: 450px) {

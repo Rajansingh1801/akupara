@@ -30,6 +30,9 @@ body {
   overflow-x: hidden;
 }
 .navbar {
+  #navbar_top {
+    transition: 1000ms ease-in-out;
+  }
   padding: 20px 0px;
   .logo-home-img {
     padding: 0px 48px;
@@ -161,49 +164,104 @@ nav {
 
 section.header {
   width: 100%;
-  height: 100vh;
-  background-color: #5e5150;
+  background-color: #ffc746;
 
-  h1 {
-    font-size: 76px;
-    line-height: 67px;
-    color: #d3ae63;
+  .myvideo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .head-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 992px) {
+      img {
+        width: 500px;
+      }
+    }
+    @media (max-width: 768px) {
+      img {
+        width: 300px;
+      }
+    }
+    @media (max-width: 576px) {
+      img {
+        width: 400px;
+      }
+    }
+  }
+  video {
+    width: 100%;
+    filter: brightness(0.5);
+     @media (max-width: 576px) {
+          height: 500px;
+          object-fit: cover;
+        }
+  }
+  h2 {
+    font-size: 40px;
+    // line-height: 67px;
+    color: #ffffff;
     font-family: "Flat Earth Scribe";
     text-align: center;
     @media (max-width: 991.9px) {
-      font-size: 65px;
-      line-height: 45px;
+      font-size: 30px;
     }
     @media (max-width: 767.9px) {
-      font-size: 50px;
-      line-height: 50px;
+      font-size: 25px;
+    }
+    @media (max-width: 576.9px) {
+      font-size: 25px;
     }
   }
-  p {
-    font-size: 21px;
-    line-height: 29px;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Avenir";
-    text-align: center;
-    @media (max-width: 767.9px) {
-      font-size: 18px;
-    }
-  }
-  .header-content {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  img {
-    width: 100%;
-    height: 100vh;
-    @media (max-width: 576px) {
-      object-position: -550px;
-      object-fit: none;
-    }
-  }
+  // h1 {
+  //   font-size: 76px;
+  //   line-height: 67px;
+  //   color: #d3ae63;
+  //   font-family: "Flat Earth Scribe";
+  //   text-align: center;
+  //   @media (max-width: 991.9px) {
+  //     font-size: 65px;
+  //     line-height: 45px;
+  //   }
+  //   @media (max-width: 767.9px) {
+  //     font-size: 50px;
+  //     line-height: 50px;
+  //   }
+  // }
+  // p {
+  //   font-size: 21px;
+  //   line-height: 29px;
+  //   color: #ffffff;
+  //   font-weight: 500;
+  //   font-family: "Avenir";
+  //   text-align: center;
+  //   @media (max-width: 767.9px) {
+  //     font-size: 18px;
+  //   }
+  // }
+  // .header-content {
+  //   height: 100vh;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+  // img {
+  //   width: 100%;
+  //   height: 100vh;
+  //   @media (max-width: 576px) {
+  //     object-position: -550px;
+  //     object-fit: none;
+  //   }
+  // }
 }
 
 section.event {
@@ -463,6 +521,9 @@ section.explore {
         color: #535e4b;
         font-family: "Flat Earth Scribe";
         text-align: center;
+        @media (max-width: 768px) {
+          font-size: 120px;
+        }
         @media (max-width: 450px) {
           font-size: 60px;
         }
@@ -492,6 +553,9 @@ section.explore {
         font-family: Antro_Vectra_Bolder;
         @media (max-width: 992px) {
           margin-left: 0px;
+        }
+        @media (max-width: 576px) {
+          font-size: 100px;
         }
         @media (max-width: 450px) {
           font-size: 70px;

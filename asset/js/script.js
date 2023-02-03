@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("navbar_top").classList.add("fixed-top");
       navbar_height = document.querySelector(".navbar").offsetHeight;
       document.body.style.paddingTop = navbar_height + "px";
-      $(".navbar").css("padding", "10px 0px");
+      $(".navbar").css({ padding: "10px 0px" });
+      $("#navbar_top").css({ transition: "1000ms" });
     } else {
       document.getElementById("navbar_top").classList.remove("fixed-top");
       document.body.style.paddingTop = "";
